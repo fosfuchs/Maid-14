@@ -180,9 +180,6 @@
 #    # - id: RubberStampApproved #Maid edit start
 #    # - id: RubberStampDenied
 #    - id: SalvageShuttleConsoleCircuitboard
-#    - id: ClothingShoesColorBrown
-#    - id: ClothingUniformJumpskirtQM
-#    - id: ClothingUniformJumpsuitQM #Maid edit end
 #    - id: RubberStampQm
 #    - id: LavalandShuttleConsoleCircuitboard # Goobstation - Mining Shuttle Board
 #    # - id: AstroNavCartridge #Maid
@@ -191,6 +188,7 @@
 #    # - id: SalvageJobBoardComputerCircuitboard # Goobstation - This doesn't really have a use right now but it's there incase it ever gets use again
 #    # - id: CargoMegaphone # goob - loudspeaker #Maid edit end
     - id: CargoTechFabCircuitboard # Goobstation - Cargo Techfab #Maid
+    - id: ClothingHeadsetAltCargo
 # Maid edit end
 
 - type: entity
@@ -225,11 +223,7 @@
     #    - id: RubberStampCaptain
     #    # - id: SpaceCash1000 #Maid
     #    - id: WeaponDisabler
-    #    - id: ClothingEyesGlassesSunglasses #Maid edit start
     #    - id: Flash
-    #    - id: ClothingShoesBootsLaceup
-    #    - id: ClothingUniformJumpskirtCaptain
-    #    - id: ClothingUniformJumpsuitCaptain
     #    # - id: ClothingEyesGlassesCommand
     #    # - id: HeadSkeleton # A skull to accompany your skeleton crew
     ##      conditions:
@@ -247,6 +241,7 @@
     - id: RubberStampCaptain
     - id: JetpackCaptainFilled
     - id: MedalCase
+    - id: ClothingHeadsetAltCommand
 # Maid edit end
 
 # No laser table + Laser table
@@ -270,6 +265,7 @@
     - id: MedalCase
     # Maid edit end
     - id: WeaponAntiqueLaser
+    - id: WeaponEgun # MAID
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
@@ -348,10 +344,6 @@
     #    - id: RubberStampApproved
     #    - id: RubberStampDenied
     #    - id: RubberStampHop
-    #    - id: ClothingEyesGlassesSunglasses #Maid edit start
-    #    - id: ClothingShoesBootsLaceup
-    #    - id: ClothingUniformJumpskirtHoP
-    #    - id: ClothingUniformJumpsuitHoP
     #    # - id: WeaponDisabler
     #    # - id: ClothingEyesHudCommand
     #    # - id: CommandMegaphone # goob - loudspeakers
@@ -371,6 +363,7 @@
     - id: BoxEncryptionKeyPassenger
     - id: BoxEncryptionKeyService
     - id: BoxFolderClipboard
+    - id: ClothingHeadsetAltCommand
 # Maid edit end
 
 - type: entity
@@ -405,9 +398,6 @@
     #    - id: RCDAmmo
     #    - id: RubberStampCE
     #    # - id: MetalFoamGrenade #Maid edit start
-    #    - id: ClothingUniformJumpskirtChiefEngineer
-    #    - id: ClothingUniformJumpsuitChiefEngineer
-    #    - id: ClothingShoesColorBrown
     #    # Goobstation V
     #    - id: SupermatterComputerCircuitboard
     #    - id: BaseHandheldStationMapSupermatterCe
@@ -426,6 +416,9 @@
     - id: RCDAmmo
       amount: 2
     - id: HolofanProjector
+    - id: ClothingHeadsetAltEngineering
+    - id: ClothingHandsGlovesColorYellow
+    - id: ClothingEyesGlassesMeson
 # Maid edit end
 
 # Hardsuit table, used for suit storage as well
@@ -479,7 +472,6 @@
     # Maid edit
     #    - id: BoxEncryptionKeyMedical
     #    # - id: ClothingBackpackDuffelSurgeryFilled # Goobstation - tools in webbing
-    #    - id: ClothingCloakCmo
     #    - id: ClothingEyesHudMedical
     #    - id: ClothingHandsGlovesNitrile
     #    # - id: ClothingHeadHatBeretCmo
@@ -494,10 +486,7 @@
     #    - id: RubberStampCMO
     #    - id: MedkitAdvancedFilled #Maid edit start
     #    - id: MedkitCombatFilled
-    #    - id: ClothingShoesColorBrown
-    #    - id: ClothingHandsGlovesLatex
-    #    - id: ClothingUniformJumpsuitCMO
-    #    - id: ClothingUniformJumpskirtCMO
+#        - id: ClothingHandsGlovesLatex
     #    - id: ClothingMaskBreathMedical
     #    # Goobstation Start
     #    # - id: ChemistryHotplateFlatPack
@@ -525,6 +514,7 @@
     - id: MedicalTechFabCircuitboard
     - id: BoxEncryptionKeyMedical
     - id: ClothingBeltMedicalFilled
+    - id: ClothingHeadsetAltMedical
 # Maid edit end
 
 # Hardsuit table, used for suit storage as well
@@ -579,7 +569,6 @@
     #    #- id: CircuitImprinterMachineCircuitboard # Goobstation - Science Techfab
     #    - id: ClothingBeltUtilityFilled
     #    - id: ClothingHeadsetAltScience
-    #    - id: ClothingShoesColorBrown #Maid
     #    - id: NodeScanner #Maid
     #    - id: DoorRemoteResearch
     #    - id: HandTeleporter
@@ -605,6 +594,7 @@
     - id: BoxEncryptionKeyScience
     - id: ClothingHeadsetAltScience
     - id: EncryptionKeyBinary
+    - id: ClothingHeadsetAltScience
 # Maid edit end
 
 # Hardsuit table, used for suit storage as well
@@ -661,15 +651,10 @@
     #    - id: ClothingEyesGlassesSecurity
     #    - id: ClothingHeadsetAltSecurity
     #    - id: ClothingMaskNeckGaiter
-    #    - id: ClothingOuterCoatHoSTrench
-    #    - id: ClothingShoesBootsJack
     #    - id: DoorRemoteSecurity
     #    #- id: HoloprojectorSecurity Goob, you have one in the belt
     #    - id: RubberStampHos
-    #    - id: SecurityTechFabCircuitboard
-    #    - id: ClothingUniformJumpsuitHoSGrey #Maid edit start
-    #    - id: ClothingUniformJumpskirtHoS
-    #    - id: ClothingUniformJumpsuitHoS
+#        - id: SecurityTechFabCircuitboard
     #    - id: MagazinePistol
     #    - id: WeaponPistolMk58
     #    - id: ClothingHandsGlovesCombat
@@ -681,7 +666,7 @@
     #    # - id: WantedListCartridge # Maid
     #    # - id: DrinkHosFlask # Maid
     #    # - id: ClothingBeltSheathHeadOfSecurityFilled # Goobstation - security revamp#Maid edit end
-    - id: ClothingBeltAssaultFilled
+    - id: ClothingBeltSecurityFilled
     - id: DoorRemoteSecurity
     - id: RubberStampHos
     - id: SecurityTechFabCircuitboard
@@ -690,6 +675,7 @@
     - id: MagazinePistol
     - id: BoxMindshield # MAID BoxMindshield
     - id: WeaponPistolMk58
+    - id: ClothingHeadsetAltSecurity
 # Maid edit end
 
 # Hardsuit table, used for suit storage as well
