@@ -694,8 +694,17 @@ namespace Content.Server.Cargo.Systems
                 LogImpact.Low,
                 $"AddAndApproveOrder {description} added order [orderId:{order.OrderId}, quantity:{order.OrderQuantity}, product:{order.ProductId}, requester:{order.Requester}, reason:{order.Reason}]");
 
-            // Add it to the list
-            return TryAddOrder(dbUid, account, order, component) && TryFulfillOrder(stationData, account, order, component).HasValue;
+            var ev = new FulfillCargoOrderEvent(stationData, order, default);
+            RaiseLocalEvent(ref ev);
+            ev.FulfillmentEntity ??= stationData.Owner;
+
+            if (ev.Handled)
+                return true;
+
+            if (!TryAddOrder(dbUid, account, order, component))
+                return false;
+
+            return TryFulfillOrder(stationData, account, order, component).HasValue;
         }
 
         public bool TryAddOrder(EntityUid dbUid, ProtoId<CargoAccountPrototype> account, CargoOrderData data, StationCargoOrderDatabaseComponent component)
