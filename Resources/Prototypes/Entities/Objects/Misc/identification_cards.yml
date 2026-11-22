@@ -1196,6 +1196,8 @@
     - state: subdepartment
       color: "#F39F27"
     - state: senior
+  - type: PresetIdCard
+    job: SeniorEngineer
 
 - type: entity
   parent: ResearchIDCard
@@ -1210,6 +1212,8 @@
     - state: subdepartment
       color: "#C96DBF"
     - state: senior
+  - type: PresetIdCard
+    job: SeniorResearcher
 
 - type: entity
   parent: MedicalIDCard
@@ -1224,6 +1228,8 @@
     - state: subdepartment
       color: "#5B97BC"
     - state: senior
+  - type: PresetIdCard
+    job: SeniorPhysician
 
 - type: entity
   parent: SecurityIDCard
@@ -1238,6 +1244,8 @@
     - state: subdepartment
       color: "#CB0000"
     - state: senior
+  - type: PresetIdCard
+    job: SeniorOfficer
 
 - type: entity
   parent: IDCardStandard
